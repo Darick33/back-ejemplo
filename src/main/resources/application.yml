@@ -1,0 +1,32 @@
+spring:
+  datasource:
+#      url: ${SERVER_URL}
+    url: jdbc:mysql://localhost/appgym
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+# Server configurations
+server:
+  error:
+    include-stacktrace: never
+
+# JWT
+api:
+  security:
+#    secret: ${API_SECURITY_SECRET}
+    secret: MgNkXjMsd4DyflPfNEYsVGQXiVI3l0qR
+
+cors:
+  allowed:
+#    origins: ${URL_CLIENT}
+#    origins: http://127.0.0.1:5500
+
+    origins: http://localhost:4200
+
+
+
+
